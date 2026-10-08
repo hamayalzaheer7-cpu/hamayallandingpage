@@ -9,7 +9,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fffaf7;
+    background: #fffaf7;
     color: #3f3035;
 }
 
@@ -17,22 +17,18 @@ body {
 /* Navbar */
 
 header {
-    background-color: #fffaf7;
+    background: #fffaf7;
 }
 
 nav {
     position: sticky;
     top: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 50px;
-
-    background-color: #fffaf7;
+    background: #fffaf7;
     border-bottom: 1px solid #ead6dc;
-
     z-index: 10;
 }
 
@@ -58,17 +54,24 @@ nav {
     color: #b56b82;
 }
 
-.nav-button {
+.nav-button,
+.main-button,
+.contact-button {
     color: white;
-    background-color: #b56b82;
+    background: #b56b82;
     text-decoration: none;
+}
+
+.nav-button {
     padding: 11px 18px;
     border-radius: 3px;
     font-size: 12px;
 }
 
-.nav-button:hover {
-    background-color: #8f4f66;
+.nav-button:hover,
+.main-button:hover,
+.contact-button:hover {
+    background: #8f4f66;
 }
 
 
@@ -76,21 +79,18 @@ nav {
 
 .hero {
     min-height: 650px;
-
     padding: 80px 60px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-color: #fffaf7;
 }
 
 .hero-text {
     width: 48%;
 }
 
-.top-text {
+.top-text,
+.small-title {
     color: #b56b82;
     font-size: 12px;
     letter-spacing: 2px;
@@ -104,8 +104,8 @@ nav {
 }
 
 .hero h1 span {
-    color: #b56b82;
     display: block;
+    color: #b56b82;
 }
 
 .hero-description {
@@ -118,17 +118,8 @@ nav {
     display: inline-block;
     margin-top: 25px;
     padding: 14px 22px;
-
-    background-color: #b56b82;
-    color: white;
-
-    text-decoration: none;
     font-size: 13px;
     border-radius: 3px;
-}
-
-.main-button:hover {
-    background-color: #8f4f66;
 }
 
 .main-button:focus {
@@ -151,18 +142,13 @@ nav {
 
 .image-note {
     position: absolute;
-
     bottom: 20px;
     left: -25px;
-
-    background-color: #b56b82;
-    color: white;
-
     padding: 14px 18px;
-
+    background: #b56b82;
+    color: white;
     font-size: 12px;
     letter-spacing: 1px;
-
     z-index: 2;
 }
 
@@ -171,22 +157,20 @@ nav {
 
 .about {
     padding: 100px 60px;
-
     display: flex;
     align-items: center;
-
     gap: 50px;
-
-    background-color: #fdf0f4;
+    background: #fdf0f4;
 }
 
 .about-number {
-    font-size: 13px;
-    color: #b56b82;
     align-self: flex-start;
+    color: #b56b82;
+    font-size: 13px;
 }
 
-.about-image {
+.about-image,
+.about-text {
     width: 40%;
 }
 
@@ -194,17 +178,6 @@ nav {
     width: 100%;
     height: 430px;
     object-fit: cover;
-}
-
-.about-text {
-    width: 40%;
-}
-
-.small-title {
-    color: #b56b82;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: bold;
 }
 
 .about-text h2 {
@@ -218,20 +191,18 @@ nav {
 }
 
 .about-text summary {
-    margin-top: 20px;
     display: inline-block;
-
+    margin-top: 20px;
     color: #b56b82;
-
     font-weight: bold;
     cursor: pointer;
     font-size: 13px;
 }
 
 .more-text {
-    background-color: white;
     padding: 15px;
     margin-top: 15px;
+    background: white;
     border-left: 3px solid #b56b82;
 }
 
@@ -240,10 +211,9 @@ nav {
 
 .services {
     padding: 100px 60px;
-    background-color: #fffaf7;
 }
 
-.services > h2 {
+.services>h2 {
     font-size: 45px;
     margin-top: 15px;
 }
@@ -253,16 +223,12 @@ nav {
 }
 
 .service-card {
+    position: relative;
     display: flex;
     align-items: center;
-
     gap: 30px;
-
     padding: 30px 0;
-
     border-top: 1px solid #e5d2d8;
-
-    position: relative;
 }
 
 .service-number {
@@ -314,7 +280,7 @@ nav {
 .why-us {
     padding: 100px 60px;
     text-align: center;
-    background-color: #fdf0f4;
+    background: #fdf0f4;
 }
 
 .why-us h2 {
@@ -325,23 +291,20 @@ nav {
 .features {
     display: flex;
     justify-content: center;
-
     gap: 25px;
-
     margin-top: 50px;
 }
 
 .feature {
     width: 250px;
     padding: 30px;
-
-    background-color: white;
+    background: white;
     border: 1px solid #ead6dc;
 }
 
 .feature span {
-    font-size: 30px;
     color: #b56b82;
+    font-size: 30px;
 }
 
 .feature h3 {
@@ -360,7 +323,6 @@ nav {
 .contact {
     padding: 120px 30px;
     text-align: center;
-    background-color: #fffaf7;
 }
 
 .contact h2 {
@@ -369,26 +331,16 @@ nav {
     margin: 20px 0;
 }
 
-.contact > p {
+.contact>p {
     color: #6d5b61;
     line-height: 1.6;
 }
 
 .contact-button {
     display: inline-block;
-
     margin-top: 25px;
     padding: 15px 25px;
-
-    background-color: #b56b82;
-    color: white;
-
-    text-decoration: none;
     font-size: 13px;
-}
-
-.contact-button:hover {
-    background-color: #8f4f66;
 }
 
 
@@ -396,10 +348,8 @@ nav {
 
 footer {
     padding: 50px 30px;
-
     text-align: center;
-
-    background-color: #3f3035;
+    background: #3f3035;
     color: white;
 }
 
@@ -432,7 +382,7 @@ footer p {
 }
 
 
-/* Mobile */
+/* Responsive */
 
 @media (max-width: 700px) {
 
@@ -456,7 +406,6 @@ footer p {
     .nav-button {
         font-size: 10px;
     }
-
 
     .hero {
         flex-direction: column;
@@ -489,7 +438,6 @@ footer p {
         left: 10px;
     }
 
-
     .about {
         flex-direction: column;
         padding: 70px 25px;
@@ -505,12 +453,11 @@ footer p {
         font-size: 35px;
     }
 
-
     .services {
         padding: 70px 25px;
     }
 
-    .services > h2 {
+    .services>h2 {
         font-size: 35px;
     }
 
@@ -523,7 +470,6 @@ footer p {
         width: 100%;
         height: 220px;
     }
-
 
     .why-us {
         padding: 70px 25px;
@@ -542,7 +488,6 @@ footer p {
         width: 100%;
     }
 
-
     .contact {
         padding: 80px 25px;
     }
@@ -550,5 +495,4 @@ footer p {
     .contact h2 {
         font-size: 40px;
     }
-
 }
